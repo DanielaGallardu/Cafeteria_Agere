@@ -13,7 +13,7 @@ h2, .fs-xxl {
   font-family: $pt-mono;
 }
 
-h3, .fs-xl {
+h3,.paragraph__title .fs-xl {
   font-size: $fs-xl;
   font-family: $pt-mono;
 }
@@ -23,7 +23,7 @@ h4, .fs-lg {
   font-family: $pt-mono;
 }
 
-p, .fs-md {
+p,.fs-md {
   font-size: $fs-md;
   font-family: $roboto;
 }

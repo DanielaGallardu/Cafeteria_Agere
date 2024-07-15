@@ -29,7 +29,7 @@ h2, .fs-xxl {
   font-family: "PT Mono", monospace;
 }
 
-h3, .fs-xl {
+h3, .paragraph__title .fs-xl {
   font-size: 30px;
   font-family: "PT Mono", monospace;
 }
@@ -52,7 +52,7 @@ p, .fs-md {
   padding: 1rem 5rem 1rem 5rem;
 }
 .header__logo img {
-  width: 50px;
+  width: 3.12rem;
 }
 .header__nav {
   margin-left: 5rem;
@@ -85,74 +85,130 @@ p, .fs-md {
 
 .section {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.section__left {
+.section__left__top {
   width: 65%;
   position: relative;
 }
-.section__left img {
+.section__left__top img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.section__left__box {
-  position: absolute;
-  width: 26rem;
-  height: 7.5rem;
-  background-color: #fff;
-  z-index: 1;
-  right: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: row;
-}
-.section__left__box--highlight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.section__left__box--highlight--number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000;
-}
-.section__left__box--highlight--text {
-  font-size: 12px;
-  text-align: left;
-  padding-left: 2rem;
-  padding-right: 1rem;
-}
-.section__right {
+.section__right__top {
   width: 35%;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.section__right--content {
+.section__right__top--content {
   display: flex;
   flex-direction: column;
   padding-left: 3rem;
 }
-.section__right__box--yellow {
+.section__paragraph {
+  width: 33.3%;
+}
+.section__paragraph--title {
+  padding: 2rem 5rem;
+}
+.section__paragraph--text {
+  padding: 0 5rem;
+}
+.section__maps {
+  position: relative;
+  width: 33.3%;
+}
+.section__maps img {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  width: 90%;
+  height: 15rem;
+  top: 2rem;
+  left: -3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__image {
+  width: 33.3%;
+  position: relative;
+}
+.section__image--coffe {
+  position: absolute;
+  width: 6rem;
+  height: 12rem;
+  top: 0;
+  left: -4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
+}
+.section__image--machine {
+  width: 100%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box {
+  position: absolute;
+  width: 26rem;
+  height: 7.5rem;
+  background-color: #fff;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.box__highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.box__highlight--number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+.box__highlight--text {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+.box__box--yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 7.5rem;
   height: 7.5rem;
   background-color: #eacb31;
 }
-.section__right__box--orange {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box__box--orange {
   position: absolute;
   bottom: 1rem;
   left: -0.8rem;
-  z-index: 1;
   width: 7.5rem;
+  z-index: 1;
   height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e4572e;
+}
+
+.box__blue {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  background-color: #3c91e6;
+  display: block;
+  top: 0;
+  left: 0;
 }
 
 .icono {
@@ -229,7 +285,7 @@ p, .fs-md {
 }
 
 .main-content {
-  padding: 1rem;
+  padding: 0;
 }
 .main-content .intro {
   display: flex;

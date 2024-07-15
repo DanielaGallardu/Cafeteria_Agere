@@ -1,0 +1,66 @@
+.box {
+  position: absolute;
+  width: 26rem;
+  height: 7.5rem;
+  background-color: $primary-white;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+
+  &__highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  
+    &--number{
+      font-size: 2rem;
+      font-weight: bold;
+      color: $primary-black
+
+    }
+    &--text{
+      font-size: 12px;
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 1rem;
+    }
+
+    
+  }
+
+  &__box--yellow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: $primary-yellow;
+  }
+
+  &__box--orange{
+    position: absolute;
+    bottom: 1rem;
+    left: -0.8rem;
+    width: 7.5rem;
+    z-index: 1;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-orange;
+  }
+
+}
+
+.box__blue{
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  background-color: $primary-blue;
+  display: block;
+  top: 0;
+  left: 0;
+}
